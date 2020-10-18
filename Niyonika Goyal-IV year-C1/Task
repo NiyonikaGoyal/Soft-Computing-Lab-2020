@@ -1,0 +1,127 @@
+
+Aim: Write a program to implement all the operators in python
+1. Arithmetic Operators
+In [1]:
+x, y = 20, 5
+
+# addition
+print(x, '+', y, '=', x+y)
+# subtraction
+print(x, '-', y, '=', x-y)
+# multiplication
+print(x, '*', y, '=', x*y)
+# division
+print(x, '/', y, '=', x/y)
+# modulus
+print(x, '%', y, '=', x%y)
+# exponent
+print(x, '**', y, '=', x**y)
+20 + 5 = 25
+20 - 5 = 15
+20 * 5 = 100
+20 / 5 = 4.0
+20 % 5 = 0
+20 ** 5 = 3200000
+2. Logical Operators
+In [2]:
+x= True
+y= False
+
+# 'AND' : true when both operands true otherwise false
+print(x, 'AND', y, '=', x and y)
+# 'OR' : true when either operand is true otherwise false
+print(x, 'OR', y, '=', x or y)
+# 'NOT' : true when operand is false
+print('NOT', x, '=', not x)
+True AND False = False
+True OR False = True
+NOT True = False
+3. Bitwise Operators
+In [4]:
+x, y = 20, 5
+
+# Bitwise AND '&'
+print(x, '&', y, '=' , x&y) 
+# Bitwise OR '|'
+print(x, '|', y, '=' , x|y)
+# Bitwise NOT '~'
+print('~', x, '=', ~x)
+# Bitwise XOR '^'
+print(x, '^', y, '=' , x^y)
+# Right shift '>>'
+print(x, '>>', y, '=' , x>>y)
+# Left Shift '<<'
+print(x, '<<', y, '=' , x<<y)
+20 & 5 = 4
+20 | 5 = 21
+~ 20 = -21
+20 ^ 5 = 17
+20 >> 5 = 0
+20 << 5 = 640
+4. Comparison Operators
+In [3]:
+x, y = 20, 5
+
+# Greator than '>'
+print(x, '>', y, '=' , x>y)
+# Less than '<'
+print(x, '<', y, '=' , x<y)
+# Equals to
+print(x, '==', y, '=' , x==y)
+# Greater than equals to '>='
+print(x, '>=', y, '=' , x>=y)
+# Less than equals to '<='
+print(x, '<=', y, '=' , x<=y)
+# Not equals to '!='
+print(x, '!=', y, '=' , x!=y)
+20 > 5 = True
+20 < 5 = False
+20 == 5 = False
+20 >= 5 = True
+20 <= 5 = False
+20 != 5 = True
+5. Assignment Operator
+In [6]:
+# Assignment operator '='
+x = 5
+
+print('x', '=', x)
+x = 5
+6. Identity Operators
+In [9]:
+x = 10
+y = 10
+z = 20
+a = 'check'
+b = 'check'
+m=[0,1,2]
+n=[0,1,2]
+# 'is' true if both values are identical
+print(x,'is', y, '=', x is y)
+# 'is not' true if both values are different
+print(x,'is not',z,'=', x is not z)
+# strings and integers are identical 
+print(a,'is not', b, '=', a is not b)
+# list items are equal but not identical as they have different memory locations that is why the answer is false 
+print(m,'is',n,'=',m is n)
+10 is 10 = True
+10 is not 20 = True
+check is not check = False
+[0, 1, 2] is [0, 1, 2] = False
+7. Membership Operators
+In [16]:
+x = 'Hello'
+y = {1:'kitkat', 2:'bournville'}
+z = ['Hi', 'Hello', 'Hola', 'Hell']
+
+# 'in' true if a value is present in the sequence of dictionary or list or tuple or string or set
+print('Hello in', z, '=', 'Hello' in z)
+print('he in',x,'=','he' in x)
+print('He in',x,'=','He' in x)
+# 'not in' true if a value is not present in the sequence
+print('Hell not in', y, '=', 'Hell' not in y)
+Hello in ['Hi', 'Hello', 'Hola', 'Hell'] = True
+he in Hello = False
+He in Hello = True
+Hell not in {1: 'kitkat', 2: 'bournville'} = True
+In [ ]:
